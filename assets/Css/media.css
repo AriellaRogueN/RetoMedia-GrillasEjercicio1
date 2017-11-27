@@ -1,0 +1,39 @@
+
+/*brackpoints
+575
+576-992
+993*/
+/*Cuando la pantalla tenga un maximo de 575 px, se mostrará
+una imagen de fondo distinta, la imagen que estaba visible 
+se ocultará (cat-3) y la imagen oculta se visualizará (cat-1)*/
+@media (max-width: 575px) {
+    body {
+        background-image: url("../images/dawn.png");
+        background-size: cover;
+        height: 100vh;
+        background-repeat: no-repeat;
+    }
+    #cat-3 {
+        display: none;
+    }
+    #cat-1 {
+        display: block;
+    }
+}
+/*Cuando la pantalla este entre los de 576 y 992 px, se mostrará
+una imagen de fondo distinta, la imagen que estaba visible 
+se ocultará (cat-3) y la imagen oculta se visualizará (cat-2)*/
+@media (min-width: 576px) and (max-width: 992px) {
+    body {
+        background-image: url("../images/night.jpg");
+        background-size: cover;
+        height: 100vh;
+        background-repeat: no-repeat;
+    }
+    #cat-2 {
+        display: block;
+    }
+    #cat-3 {
+        display: none;
+    }
+}

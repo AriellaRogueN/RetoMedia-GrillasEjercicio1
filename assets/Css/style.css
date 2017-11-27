@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*En el body se coloca la imagen de fondo, 
+y se configura la imagen del gato con display block, 
+para que se visualize en la pantalla de mayor tamaño*/
+
+body {
+    background-image: url("../images/sunny-day.jpg");
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+#cat-3 {
+    display: block;
+}
+
+#litlecat-3 {
+    width: 10em;
+    height: 6em;
+}
+
+/* Las dos imagenes restantes se configuran con display none,
+estas no serán visibles en la pantalla de mayor tamaño */
+#cat-2 {
+    display: none;
+}
+
+#litlecat-2 {
+    width: 10em;
+    height: 8em;
+}
+
+#cat-1 {
+    display: none;
+}
+
+#litlecat-1 {
+    width: 10em;
+    height: 8em;
+}
